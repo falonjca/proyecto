@@ -13,7 +13,6 @@ void mostrarMenu() {
     cout << "3. Desplegar artistas  ascendente\n";
     cout << "4. Desplegar artistas en forma descendente\n";
     cout << "5. Consultar datos de un artista\n";
-    cout << "6. Leer artistas de archivo\n";
     cout << "0. Salir\n";
     cout << "Seleccione una opcion: ";
 }
@@ -88,12 +87,6 @@ int main() {
             cout << "Ingrese la cedula del artista que desea consultar: ";
             cin >> cedula;
             arbolArtistas.consultarArtista(cedula);
-            break;
-        }
-
-        case 6: {
-            string nombreArchivo = "artistas.txt"; // Asegúrate de que el archivo esté en el directorio correcto
-            leerArchivo(arbolArtistas, nombreArchivo);
             break;
         }
 
